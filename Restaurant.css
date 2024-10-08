@@ -1,0 +1,185 @@
+body{
+  background-color: #F4A261;
+    // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;  
+}    
+}
+body{
+  margin: 0%;
+}
+.header{
+  background-color: #F63;
+  color:white;
+}
+.header .links{
+  position: relative;
+}
+.container{
+  width: 70%;
+  margin: auto;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header .links .icon{
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  right: 5px;
+}
+.header .links .icon span{
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+.header .links .icon span:first-child{
+width: 100%;
+} 
+.header .links .icon span:nth-child(2){
+width: 60%;
+transition: 0.4s;
+} 
+.header .links .icon span:last-child{
+width: 100%;
+} 
+.header .links ul{
+  padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    right: -113px;
+    min-width: 200px;
+    top: calc(100% + -8px);
+  display: none;
+}
+.header .links:hover ul{
+  display: block;
+}
+.header .links ul::before{
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color:#F63;
+  position: absolute;
+  top: -20px;
+  right: 5px;   
+}
+.header ul li a{
+display: block;
+padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+.header ul li a:hover{
+  padding-left: 25px;
+}
+.header ul li:not(:last-child) a{
+  border-bottom: solid 1px #eee;
+}
+.header .links .icon:hover span:nth-child(2){
+  width: 100%;
+}
+.header .links .icon:hover ul{
+  display: block;
+}
+ 
+/* main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* text-align: center; */
+
+/* }
+ .text{
+  width: 70%;
+  margin-left: 10%;
+
+}
+main .img{
+  margin-right: 10%;
+  width: 200px;
+}
+main .text  h2{
+font-size: 70px;
+margin: 0;
+text-align: start;
+color: #264653;
+}
+main .text button{
+padding: 10px 20px;
+border: none;
+border-radius: 10px;
+background-color: #264653;
+color:white;
+margin-left: 0;
+margin-top: 30px;
+cursor: pointer;  
+}   */
+.container{
+  width: 70%;
+}
+.landing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.text{
+  width: 70%;
+  margin-top:0;
+}
+.landing .plat1{
+  width: 350px;
+  top: -50px;
+  margin-top: 10%;
+}
+.landing .text h2{
+   font-size: 60px;
+   margin: 0;
+   text-align: start;
+   color: #264653;
+}
+.landing .text button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #264653;
+  color: white;
+  margin-left: 0;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.section{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.section .card{
+  background-color:rgb(177, 41, 41);
+  width: 200px;
+  border-radius: 20px;
+  overflow: hidden; /* delete everything over the element, like the image-radius */
+}
+.section .text2{
+
+  margin: 0;
+  padding: 15px;
+  font-size: 13px;
+}
+
+
+  
